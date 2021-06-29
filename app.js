@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
+	console.log(req.hostname); 
   res.send(`
     <h1>Hello Prasenjit Dey from this NodeJS app!!</h1>
     <p>Try sending a request to /error and see what happens</p>
